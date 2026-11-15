@@ -5,7 +5,7 @@
     "name": "やがみ局",
     "identifier": "ea854d25-5259-403f-aef2-bb6328df7b5a",
     "preferredPrefix": ["683"],
-    "sipUri": ["sip:raspi4.tailef9450.ts.net:5060;transport=udp"]
+    "sipUri": ["sip:pbx.tailef9450.ts.net:5060;transport=udp"]
   },
   "extensions": [
     {
