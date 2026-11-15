@@ -1,0 +1,38 @@
+{
+  "$schema": "https://tkytel.github.io/mantela/0.1.x/mantela.schema.json",
+  "version": "0.1.x",
+  "aboutMe": {
+    "name": "やがみ局",
+    "identifier": "ea854d25-5259-403f-aef2-bb6328df7b5a",
+    "preferredPrefix": ["683"],
+    "sipUri": ["sip:raspi4.tailef9450.ts.net:5060;transport=udp"]
+  },
+  "extensions": [
+    {
+      "name": "代表番号",
+      "extension": "1000",
+      "identifier": "cd1687c7-bde9-4e2e-a256-708789784af2",
+      "type": "main",
+      "transferTo": [
+        "f92b805f-02cd-4e4c-8d59-115758dd4450",
+        "d15b03b5-aa9a-4c23-b004-93b45a8168bc"
+      ]
+    },
+    {
+      "name": "Android ソフトフォン",
+      "extension": "",
+      "identifier": "f92b805f-02cd-4e4c-8d59-115758dd4450",
+      "type": "smartphone",
+      "model": "Android; Linphone"
+    },
+    {
+      "name": "PC ソフトフォン",
+      "extension": "1002",
+      "identifier": "d15b03b5-aa9a-4c23-b004-93b45a8168bc",
+      "type": "phone",
+      "model": "Windows; Linphone"
+    }
+  ],
+  "providers": []
+}
+
