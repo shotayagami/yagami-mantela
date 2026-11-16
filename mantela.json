@@ -37,6 +37,12 @@
       "extension": "9000",
       "identifier": "b7bee6ac-91df-40ea-86b5-282da41fe6a3",
       "type": "fax"
+    },
+    {
+      "name": "疎通確認（エコーテスト）",
+      "extension": "1234",
+      "identifier": "4ff378b7-5cef-4640-bb75-4021b8b6bb4c",
+      "type": "application"
     }
   ],
   "providers": [
