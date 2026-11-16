@@ -33,6 +33,24 @@
       "model": "Windows; Linphone"
     }
   ],
-  "providers": []
+  "providers": [
+    {
+      "name": "zin3",
+      "prefix": "333",
+      "identifier": "498a3211-0f85-42a7-b2c0-44fb7095bd67",
+      "mantela": "https://zin3.cc/.well-known/mantela.json"
+    },
+    {
+      "name": "ab2m-ありあな局",
+      "prefix": "462",
+      "identifier": "e22b18c4-d760-4ff2-ade7-a374200a1c1e",
+      "mantela": "https://allianaab2m.github.io/mantela/mantela.json"
+    },
+    {
+      "name": "SHINANOTEL",
+      "prefix": "661",
+      "identifier": "5752ca4c-c828-4946-a8f3-7f8272206f2d",
+      "mantela": "https://da-tenshi.github.io/mantela.json"
+    }
+  ]
 }
-
