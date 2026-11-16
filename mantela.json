@@ -43,6 +43,18 @@
       "extension": "1234",
       "identifier": "4ff378b7-5cef-4640-bb75-4021b8b6bb4c",
       "type": "application"
+    },
+    {
+      "name": "天気予報",
+      "extension": "9177",
+      "identifier": "7aed039d-5844-484e-8cd3-98f444480bc9",
+      "type": "application"
+    },
+    {
+      "name": "週間予報",
+      "extension": "9178",
+      "identifier": "39931ec0-505d-44c8-94ba-19333f710aa7",
+      "type": "application"
     }
   ],
   "providers": [
