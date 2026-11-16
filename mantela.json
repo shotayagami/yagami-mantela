@@ -31,6 +31,12 @@
       "identifier": "d15b03b5-aa9a-4c23-b004-93b45a8168bc",
       "type": "phone",
       "model": "Windows; Linphone"
+    },
+    {
+      "name": "FAX",
+      "extension": "9000",
+      "identifier": "b7bee6ac-91df-40ea-86b5-282da41fe6a3",
+      "type": "fax"
     }
   ],
   "providers": [
