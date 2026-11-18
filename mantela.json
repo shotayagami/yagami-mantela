@@ -45,6 +45,12 @@
       "type": "application"
     },
     {
+      "name": "電話計算サービス",
+      "extension": "2110",
+      "identifier": "8ce8c9eb-0209-422a-bc4d-3d90e1533d53",
+      "type": "application"
+    },
+    {
       "name": "天気予報",
       "extension": "9177",
       "identifier": "7aed039d-5844-484e-8cd3-98f444480bc9",
@@ -84,3 +90,4 @@
     }
   ]
 }
+
