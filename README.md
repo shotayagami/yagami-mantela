@@ -17,6 +17,10 @@ Tailscale に接続した端末で `http://100.114.71.89:8080/admin/` を開き�
 
 Asterisk の移行前バックアップは Pi の `/root/freepbx-migration/asterisk-before.tar.gz` です。秘密情報を含みます。FreePBX には MariaDB、Apache、Sury の PHP 8.2 と PM2 を追加しています。Asterisk と PHP はそれぞれ更新状況を確認してください。PM2 の依存パッケージには npm audit で高 8 件・中 4 件の警告があり、互換性を確認せずに自動修正していません。
 
+## 電話計算サービス
+
+東京広域電話網から `6832110`、やがみ局の内線から `2110` にかけると、ボタンで入力した式の答えを音声で聞けます。詳しい操作は[電話計算サービスの案内](dials.md)をご覧ください。
+
 ## この Pi で内線を使う
 
 各ソフトフォンを Pi と同じ Tailscale ネットワークに接続します。Pi の `~/voip-build/phone-credentials.txt` に SIP サーバーアドレスと内線 1001・1002 のパスワードがあります。Pi に SSH 接続して `cat ~/voip-build/phone-credentials.txt` で確認し、別々の端末に設定してください。ソフトフォンでは UDP、コーデックは PCMU または PCMA を使います。内線間で発着信して双方向の音声を確認します。
