@@ -46,9 +46,9 @@ Asterisk の移行前バックアップは Pi の `/root/freepbx-migration/aster
 
 [公式サイト](https://tkytel.github.io/)の参加窓口から交流し、接続先の局と Tailscale の共有方法、局番、発着信の番号変換、SIP トランクの接続情報を相談します。[MIKANETEL の接続案内](https://scrapbox.io/KusaReMKN/MIKANETEL%40%E6%9D%B1%E4%BA%AC%E5%BA%83%E5%9F%9F%E9%9B%BB%E8%A9%B1%E7%B6%B2%E3%81%A8%E6%8E%A5%E7%B6%9A%E3%81%99%E3%82%8B)も参照できます。相手と合意するまでは中継を有効にしないでください。
 
-やがみ局の希望局番は `683`、設置位置は大阪府です。着信専用トランク `SIP-TRUNK-YAGAMI` は認証付きで最大 100 件の同時登録を受け、`1000` と `1002` に限り着信します。他局への中継や外向けルートは設定していません。認証情報は Pi の `~/voip-build/trunk-credentials.txt` に保存しており、所有者のみ読み取れます。2件の同時登録、対象外番号の拒否、`1000` の案内音声送出と `1002` への呼出信号を Pi 上の試験で確認しました。実際の他局との接続と音声は未確認です。
+やがみ局の希望局番は `683`、設置位置は大阪府です。着信専用トランク `SIP-TRUNK-YAGAMI` は認証付きで最大 100 件の同時登録を受け、`1000` と `1002` に限り着信します。他局への発信ルートとして zin3、ab2m、SHINANOTEL、MikaNeTEL を設定しています。認証情報は Pi の `~/voip-build/trunk-credentials.txt` に保存しており、所有者のみ読み取れます。2件の同時登録、対象外番号の拒否、`1000` の案内音声送出と `1002` への呼出信号を Pi 上の試験で確認しました。実際の他局との接続と音声は未確認です。
 
-[Mantela](https://shotayagami.github.io/yagami-mantela/mantela.json) は GitHub Pages で公開しており、公式 0.1.x スキーマで検証済みです。代表番号 `1000` は Android と PC の端末へ転送する `main` として記述しています。接続先が未確定のため `providers` は空です。公開リポジトリには局情報だけを置き、Tailscale 招待 URL や SIP 認証情報は含めていません。[discord-draft.md](discord-draft.md) は投稿文の下書きです。Pi の RTP ポート範囲は UDP 10000〜20000 です。
+[Mantela](https://shotayagami.github.io/yagami-mantela/mantela.json) は GitHub Pages で公開しており、公式 0.1.x スキーマで検証済みです。代表番号 `1000` は Android と PC の端末へ転送する `main` として記述しています。`providers` には zin3、ab2m、SHINANOTEL、MikaNeTEL を記載しています。公開リポジトリには局情報だけを置き、Tailscale 招待 URL や SIP 認証情報は含めていません。[discord-draft.md](discord-draft.md) は投稿文の下書きです。Pi の RTP ポート範囲は UDP 10000〜20000 です。
 
 参考資料の [VoIP 網の構築記事](https://zenn.dev/kusaremkn/articles/abd760f9f2f450)は MikoPBX の局間接続例、[FBニュースの記事](https://www.fbnews.jp/202603/special/)は Pi での RasPBX 導入例です。[Mantela のコミット](https://github.com/Allianaab2m/mantela/commit/6bcae59ba6fa1251f22a266c4a583915b0b53e91)は札幌局の記述を削除した履歴であり、接続設定や利用可能な局番の証拠にはなりません。指定された [Qiita の記事](https://qiita.com/mofurune/items/34601bcff58e491d8d55)は Meta Quest への APK インストールについての記事でした。
 
